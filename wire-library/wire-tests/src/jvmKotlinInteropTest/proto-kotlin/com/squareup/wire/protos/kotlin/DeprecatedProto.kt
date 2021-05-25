@@ -19,9 +19,10 @@ import kotlin.String
 import kotlin.Unit
 import kotlin.hashCode
 import kotlin.jvm.JvmField
+import kotlin.jvm.JvmOverloads
 import okio.ByteString
 
-public class DeprecatedProto(
+public class DeprecatedProto @JvmOverloads constructor(
   @Deprecated(message = "foo is deprecated")
   @field:WireField(
     tag = 1,

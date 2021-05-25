@@ -18,9 +18,10 @@ import kotlin.String
 import kotlin.Unit
 import kotlin.hashCode
 import kotlin.jvm.JvmField
+import kotlin.jvm.JvmOverloads
 import okio.ByteString
 
-public class BuyOneGetOnePromotion(
+public class BuyOneGetOnePromotion @JvmOverloads constructor(
   @field:WireField(
     tag = 1,
     adapter = "com.squareup.wire.ProtoAdapter#STRING",

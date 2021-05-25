@@ -19,10 +19,11 @@ import kotlin.String
 import kotlin.Unit
 import kotlin.collections.Map
 import kotlin.jvm.JvmField
+import kotlin.jvm.JvmOverloads
 import kotlin.lazy
 import okio.ByteString
 
-public class Mappy(
+public class Mappy @JvmOverloads constructor(
   things: Map<String, Thing> = emptyMap(),
   unknownFields: ByteString = ByteString.EMPTY
 ) : Message<Mappy, Mappy.Builder>(ADAPTER, unknownFields) {

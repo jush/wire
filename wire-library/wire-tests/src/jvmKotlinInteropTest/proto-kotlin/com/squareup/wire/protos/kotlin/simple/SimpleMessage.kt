@@ -28,13 +28,14 @@ import kotlin.Unit
 import kotlin.collections.List
 import kotlin.hashCode
 import kotlin.jvm.JvmField
+import kotlin.jvm.JvmOverloads
 import kotlin.jvm.JvmStatic
 import okio.ByteString
 
 /**
  * A message for testing.
  */
-public class SimpleMessage(
+public class SimpleMessage @JvmOverloads constructor(
   /**
    * An optional int32 //&#42;we should escape that comment*
    */
@@ -516,7 +517,7 @@ public class SimpleMessage(
     private const val serialVersionUID: Long = 0L
   }
 
-  public class NestedMessage(
+  public class NestedMessage @JvmOverloads constructor(
     /**
      * An optional int32
      */

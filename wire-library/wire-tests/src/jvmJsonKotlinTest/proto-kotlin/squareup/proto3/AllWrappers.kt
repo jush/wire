@@ -24,10 +24,11 @@ import kotlin.collections.List
 import kotlin.collections.Map
 import kotlin.hashCode
 import kotlin.jvm.JvmField
+import kotlin.jvm.JvmOverloads
 import kotlin.lazy
 import okio.ByteString
 
-public class AllWrappers(
+public class AllWrappers @JvmOverloads constructor(
   @field:WireField(
     tag = 1,
     adapter = "com.squareup.wire.ProtoAdapter#DOUBLE_VALUE",

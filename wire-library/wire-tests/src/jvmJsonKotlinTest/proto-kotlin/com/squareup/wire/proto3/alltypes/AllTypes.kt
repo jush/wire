@@ -29,11 +29,12 @@ import kotlin.collections.List
 import kotlin.collections.Map
 import kotlin.hashCode
 import kotlin.jvm.JvmField
+import kotlin.jvm.JvmOverloads
 import kotlin.jvm.JvmStatic
 import kotlin.lazy
 import okio.ByteString
 
-public class AllTypes(
+public class AllTypes @JvmOverloads constructor(
   @field:WireField(
     tag = 1,
     adapter = "com.squareup.wire.ProtoAdapter#INT32",
@@ -2180,7 +2181,7 @@ public class AllTypes(
     }
   }
 
-  public class NestedMessage(
+  public class NestedMessage @JvmOverloads constructor(
     @field:WireField(
       tag = 1,
       adapter = "com.squareup.wire.ProtoAdapter#INT32",

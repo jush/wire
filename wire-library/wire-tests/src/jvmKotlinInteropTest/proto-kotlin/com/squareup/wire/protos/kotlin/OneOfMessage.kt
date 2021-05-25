@@ -19,12 +19,13 @@ import kotlin.String
 import kotlin.Unit
 import kotlin.hashCode
 import kotlin.jvm.JvmField
+import kotlin.jvm.JvmOverloads
 import okio.ByteString
 
 /**
  * It's a one of message.
  */
-public class OneOfMessage(
+public class OneOfMessage @JvmOverloads constructor(
   /**
    * What foo.
    */

@@ -20,9 +20,10 @@ import kotlin.String
 import kotlin.Unit
 import kotlin.collections.List
 import kotlin.jvm.JvmField
+import kotlin.jvm.JvmOverloads
 import okio.ByteString
 
-public class Repeated(
+public class Repeated @JvmOverloads constructor(
   things: List<Thing> = emptyList(),
   unknownFields: ByteString = ByteString.EMPTY
 ) : Message<Repeated, Repeated.Builder>(ADAPTER, unknownFields) {

@@ -20,10 +20,11 @@ import kotlin.String
 import kotlin.Unit
 import kotlin.hashCode
 import kotlin.jvm.JvmField
+import kotlin.jvm.JvmOverloads
 import kotlin.jvm.JvmStatic
 import okio.ByteString
 
-public class FreeDrinkPromotion(
+public class FreeDrinkPromotion @JvmOverloads constructor(
   @field:WireField(
     tag = 1,
     adapter = "squareup.proto3.FreeDrinkPromotion${'$'}Drink#ADAPTER",

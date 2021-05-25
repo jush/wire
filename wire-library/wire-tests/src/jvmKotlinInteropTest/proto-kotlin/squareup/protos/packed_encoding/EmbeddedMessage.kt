@@ -20,9 +20,10 @@ import kotlin.Unit
 import kotlin.collections.List
 import kotlin.hashCode
 import kotlin.jvm.JvmField
+import kotlin.jvm.JvmOverloads
 import okio.ByteString
 
-public class EmbeddedMessage(
+public class EmbeddedMessage @JvmOverloads constructor(
   inner_repeated_number: List<Int> = emptyList(),
   @field:WireField(
     tag = 2,

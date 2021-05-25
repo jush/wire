@@ -23,9 +23,10 @@ import kotlin.Unit
 import kotlin.collections.List
 import kotlin.hashCode
 import kotlin.jvm.JvmField
+import kotlin.jvm.JvmOverloads
 import okio.ByteString
 
-public class Dinosaur(
+public class Dinosaur @JvmOverloads constructor(
   /**
    * Common name of this dinosaur, like "Stegosaurus".
    */

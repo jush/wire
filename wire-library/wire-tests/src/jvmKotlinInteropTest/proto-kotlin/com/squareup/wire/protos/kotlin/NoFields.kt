@@ -16,10 +16,11 @@ import kotlin.Long
 import kotlin.String
 import kotlin.Unit
 import kotlin.jvm.JvmField
+import kotlin.jvm.JvmOverloads
 import okio.ByteString
 
 @Deprecated(message = "NoFields is deprecated")
-public class NoFields(
+public class NoFields @JvmOverloads constructor(
   unknownFields: ByteString = ByteString.EMPTY
 ) : Message<NoFields, NoFields.Builder>(ADAPTER, unknownFields) {
   public override fun newBuilder(): Builder {

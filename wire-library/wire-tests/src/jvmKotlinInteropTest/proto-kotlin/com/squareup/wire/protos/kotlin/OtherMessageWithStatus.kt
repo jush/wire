@@ -18,10 +18,11 @@ import kotlin.Long
 import kotlin.String
 import kotlin.Unit
 import kotlin.jvm.JvmField
+import kotlin.jvm.JvmOverloads
 import kotlin.jvm.JvmStatic
 import okio.ByteString
 
-public class OtherMessageWithStatus(
+public class OtherMessageWithStatus @JvmOverloads constructor(
   unknownFields: ByteString = ByteString.EMPTY
 ) : Message<OtherMessageWithStatus, OtherMessageWithStatus.Builder>(ADAPTER, unknownFields) {
   public override fun newBuilder(): Builder {

@@ -25,10 +25,11 @@ import kotlin.collections.List
 import kotlin.collections.Map
 import kotlin.hashCode
 import kotlin.jvm.JvmField
+import kotlin.jvm.JvmOverloads
 import kotlin.lazy
 import okio.ByteString
 
-public class AllStructs(
+public class AllStructs @JvmOverloads constructor(
   struct: Map<String, *>? = null,
   list: List<*>? = null,
   null_value: Nothing? = null,

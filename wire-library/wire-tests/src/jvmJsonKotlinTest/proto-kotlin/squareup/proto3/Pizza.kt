@@ -20,9 +20,10 @@ import kotlin.String
 import kotlin.Unit
 import kotlin.collections.List
 import kotlin.jvm.JvmField
+import kotlin.jvm.JvmOverloads
 import okio.ByteString
 
-public class Pizza(
+public class Pizza @JvmOverloads constructor(
   toppings: List<String> = emptyList(),
   unknownFields: ByteString = ByteString.EMPTY
 ) : Message<Pizza, Pizza.Builder>(ADAPTER, unknownFields) {

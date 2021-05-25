@@ -23,10 +23,11 @@ import kotlin.collections.List
 import kotlin.collections.Map
 import kotlin.hashCode
 import kotlin.jvm.JvmField
+import kotlin.jvm.JvmOverloads
 import kotlin.lazy
 import okio.ByteString
 
-public class CamelCase(
+public class CamelCase @JvmOverloads constructor(
   @field:WireField(
     tag = 1,
     adapter = "squareup.proto3.CamelCase${'$'}NestedCamelCase#ADAPTER",
@@ -225,7 +226,7 @@ public class CamelCase(
     private const val serialVersionUID: Long = 0L
   }
 
-  public class NestedCamelCase(
+  public class NestedCamelCase @JvmOverloads constructor(
     @field:WireField(
       tag = 1,
       adapter = "com.squareup.wire.ProtoAdapter#INT32",

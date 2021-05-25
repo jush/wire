@@ -26,13 +26,14 @@ import kotlin.Unit
 import kotlin.collections.List
 import kotlin.hashCode
 import kotlin.jvm.JvmField
+import kotlin.jvm.JvmOverloads
 import kotlin.jvm.JvmStatic
 import okio.ByteString
 
 /**
  * Message representing a person, includes their name, unique ID number, email and phone number.
  */
-public class Person(
+public class Person @JvmOverloads constructor(
   /**
    * The customer's full name.
    */
@@ -274,7 +275,7 @@ public class Person(
     }
   }
 
-  public class PhoneNumber(
+  public class PhoneNumber @JvmOverloads constructor(
     /**
      * The customer's phone number.
      */

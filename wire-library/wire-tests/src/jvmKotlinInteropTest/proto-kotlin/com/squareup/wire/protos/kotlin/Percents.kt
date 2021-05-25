@@ -18,9 +18,10 @@ import kotlin.String
 import kotlin.Unit
 import kotlin.hashCode
 import kotlin.jvm.JvmField
+import kotlin.jvm.JvmOverloads
 import okio.ByteString
 
-public class Percents(
+public class Percents @JvmOverloads constructor(
   /**
    * e.g. "No limits, free to send and just 2.75% to receive".
    */

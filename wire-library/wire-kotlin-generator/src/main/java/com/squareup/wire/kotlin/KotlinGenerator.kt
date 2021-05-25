@@ -972,6 +972,9 @@ class KotlinGenerator private constructor(
             .defaultValue("%T.EMPTY", byteClass)
             .build())
 
+    if (javaInterOp) {
+      constructorBuilder.addAnnotation(JvmOverloads::class)
+    }
     classBuilder.primaryConstructor(constructorBuilder.build())
   }
 

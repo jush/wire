@@ -17,12 +17,13 @@ import kotlin.String
 import kotlin.Unit
 import kotlin.hashCode
 import kotlin.jvm.JvmField
+import kotlin.jvm.JvmOverloads
 import okio.ByteString
 
 /**
  * Enum names must be fully qualified in generated Kotlin
  */
-public class MessageUsingMultipleEnums(
+public class MessageUsingMultipleEnums @JvmOverloads constructor(
   @field:WireField(
     tag = 1,
     adapter = "com.squareup.wire.protos.kotlin.MessageWithStatus${'$'}Status#ADAPTER"

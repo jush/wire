@@ -20,6 +20,7 @@ import kotlin.Unit
 import kotlin.collections.Map
 import kotlin.hashCode
 import kotlin.jvm.JvmField
+import kotlin.jvm.JvmOverloads
 import kotlin.lazy
 import okio.ByteString
 
@@ -38,7 +39,7 @@ import okio.ByteString
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-public class ModelEvaluation(
+public class ModelEvaluation @JvmOverloads constructor(
   @field:WireField(
     tag = 1,
     adapter = "com.squareup.wire.ProtoAdapter#STRING"

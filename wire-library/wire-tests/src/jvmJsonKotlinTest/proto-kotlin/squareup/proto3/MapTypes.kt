@@ -18,10 +18,11 @@ import kotlin.String
 import kotlin.Unit
 import kotlin.collections.Map
 import kotlin.jvm.JvmField
+import kotlin.jvm.JvmOverloads
 import kotlin.lazy
 import okio.ByteString
 
-public class MapTypes(
+public class MapTypes @JvmOverloads constructor(
   map_string_string: Map<String, String> = emptyMap(),
   map_int32_int32: Map<Int, Int> = emptyMap(),
   map_sint32_sint32: Map<Int, Int> = emptyMap(),

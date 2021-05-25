@@ -22,10 +22,11 @@ import kotlin.Unit
 import kotlin.collections.Set
 import kotlin.hashCode
 import kotlin.jvm.JvmField
+import kotlin.jvm.JvmOverloads
 import kotlin.jvm.JvmStatic
 import okio.ByteString
 
-public class Form(
+public class Form @JvmOverloads constructor(
   @JvmField
   public val choice: OneOf<Choice<*>, *>? = null,
   @JvmField
@@ -252,7 +253,7 @@ public class Form(
     private const val serialVersionUID: Long = 0L
   }
 
-  public class ButtonElement(
+  public class ButtonElement @JvmOverloads constructor(
     unknownFields: ByteString = ByteString.EMPTY
   ) : Message<ButtonElement, ButtonElement.Builder>(ADAPTER, unknownFields) {
     public override fun newBuilder(): Builder {
@@ -315,7 +316,7 @@ public class Form(
     }
   }
 
-  public class LocalImageElement(
+  public class LocalImageElement @JvmOverloads constructor(
     unknownFields: ByteString = ByteString.EMPTY
   ) : Message<LocalImageElement, LocalImageElement.Builder>(ADAPTER, unknownFields) {
     public override fun newBuilder(): Builder {
@@ -379,7 +380,7 @@ public class Form(
     }
   }
 
-  public class RemoteImageElement(
+  public class RemoteImageElement @JvmOverloads constructor(
     unknownFields: ByteString = ByteString.EMPTY
   ) : Message<RemoteImageElement, RemoteImageElement.Builder>(ADAPTER, unknownFields) {
     public override fun newBuilder(): Builder {
@@ -443,7 +444,7 @@ public class Form(
     }
   }
 
-  public class MoneyElement(
+  public class MoneyElement @JvmOverloads constructor(
     unknownFields: ByteString = ByteString.EMPTY
   ) : Message<MoneyElement, MoneyElement.Builder>(ADAPTER, unknownFields) {
     public override fun newBuilder(): Builder {
@@ -506,7 +507,7 @@ public class Form(
     }
   }
 
-  public class SpacerElement(
+  public class SpacerElement @JvmOverloads constructor(
     unknownFields: ByteString = ByteString.EMPTY
   ) : Message<SpacerElement, SpacerElement.Builder>(ADAPTER, unknownFields) {
     public override fun newBuilder(): Builder {
@@ -569,7 +570,7 @@ public class Form(
     }
   }
 
-  public class TextElement(
+  public class TextElement @JvmOverloads constructor(
     @field:WireField(
       tag = 1,
       adapter = "com.squareup.wire.ProtoAdapter#STRING"
@@ -670,7 +671,7 @@ public class Form(
     }
   }
 
-  public class CustomizedCardElement(
+  public class CustomizedCardElement @JvmOverloads constructor(
     unknownFields: ByteString = ByteString.EMPTY
   ) : Message<CustomizedCardElement, CustomizedCardElement.Builder>(ADAPTER, unknownFields) {
     public override fun newBuilder(): Builder {
@@ -735,7 +736,7 @@ public class Form(
     }
   }
 
-  public class AddressElement(
+  public class AddressElement @JvmOverloads constructor(
     unknownFields: ByteString = ByteString.EMPTY
   ) : Message<AddressElement, AddressElement.Builder>(ADAPTER, unknownFields) {
     public override fun newBuilder(): Builder {
@@ -798,7 +799,7 @@ public class Form(
     }
   }
 
-  public class TextInputElement(
+  public class TextInputElement @JvmOverloads constructor(
     unknownFields: ByteString = ByteString.EMPTY
   ) : Message<TextInputElement, TextInputElement.Builder>(ADAPTER, unknownFields) {
     public override fun newBuilder(): Builder {
@@ -861,7 +862,7 @@ public class Form(
     }
   }
 
-  public class OptionPickerElement(
+  public class OptionPickerElement @JvmOverloads constructor(
     unknownFields: ByteString = ByteString.EMPTY
   ) : Message<OptionPickerElement, OptionPickerElement.Builder>(ADAPTER, unknownFields) {
     public override fun newBuilder(): Builder {
@@ -925,7 +926,7 @@ public class Form(
     }
   }
 
-  public class DetailRowElement(
+  public class DetailRowElement @JvmOverloads constructor(
     unknownFields: ByteString = ByteString.EMPTY
   ) : Message<DetailRowElement, DetailRowElement.Builder>(ADAPTER, unknownFields) {
     public override fun newBuilder(): Builder {
@@ -988,7 +989,7 @@ public class Form(
     }
   }
 
-  public class CurrencyConversionFlagsElement(
+  public class CurrencyConversionFlagsElement @JvmOverloads constructor(
     unknownFields: ByteString = ByteString.EMPTY
   ) : Message<CurrencyConversionFlagsElement, CurrencyConversionFlagsElement.Builder>(ADAPTER,
       unknownFields) {

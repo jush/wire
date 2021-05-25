@@ -22,10 +22,11 @@ import kotlin.collections.List
 import kotlin.collections.Map
 import kotlin.hashCode
 import kotlin.jvm.JvmField
+import kotlin.jvm.JvmOverloads
 import kotlin.lazy
 import okio.ByteString
 
-public class All32(
+public class All32 @JvmOverloads constructor(
   /**
    * Prefixing so the generated code doesn't rename it weirdly.
    */
