@@ -28,3 +28,6 @@ wire-library/docs/contributing.md
 wire-library/docs/index.md
 
 local.properties
+
+# Swift Package Manager
+.build/
